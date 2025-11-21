@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avi's Restaurant Menu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- HOME PAGE -->
+    <div id="home" class="home-page">
+        <h1 class="title">Avi's Restaurant</h1>
+        <p class="quote">"Good food brings good mood."</p>
+
+        <div class="menu-buttons-vertical">
+            <button class="btn" onclick="showMenu('starters')">Starters</button>
+            <button class="btn" onclick="showMenu('drinks')">Drinks</button>
+            <button class="btn" onclick="showMenu('maincourse')">Main Course</button>
+            <button class="btn" onclick="showMenu('desserts')">Desserts</button>
+            <button class="btn" onclick="showMenu('others')">Others</button>
+        </div>
+    </div>
+
+
+    <!-- MENU SECTIONS -->
+
+    <div id="starters" class="menu-page hidden">
+        <button class="back-btn" onclick="goBack()">← Back</button>
+        <h2>Starters</h2>
+
+        <div class="item">
+            <img src="images/paneer.png">
+            <div class="details">
+                <p class="name">Paneer Tikka</p>
+                <p class="price">₹120</p>
+            </div>
+        </div>
+
+        <div class="item">
+            <img src="images/spring.png">
+            <div class="details">
+                <p class="name">Spring Rolls</p>
+                <p class="price">₹90</p>
+            </div>
+        </div>
+
+        <div class="item">
+            <img src="images/manch.png">
+            <div class="details">
+                <p class="name">Veg Manchurian</p>
+                <p class="price">₹110</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="drinks" class="menu-page hidden">
+        <button class="back-btn" onclick="goBack()">← Back</button>
+        <h2>Drinks</h2>
+
+        <div class="item">
+            <img src="images/coldCoffee.png">
+            <div class="details">
+                <p class="name">Cold Coffee</p>
+                <p class="price">₹80</p>
+            </div>
+        </div>
+
+        <div class="item">
+            <img src="images/lemon.png">
+            <div class="details">
+                <p class="name">Fresh Lemon Soda</p>
+                <p class="price">₹50</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="maincourse" class="menu-page hidden">
+        <button class="back-btn" onclick="goBack()">← Back</button>
+        <h2>Main Course</h2>
+
+        <div class="item">
+            <img src="images/paneertikka.png">
+            <div class="details">
+                <p class="name">Paneer Butter Masala</p>
+                <p class="price">₹180</p>
+            </div>
+        </div>
+
+        <div class="item">
+            <img src="images/biryani.png">
+            <div class="details">
+                <p class="name">Veg Biryani</p>
+                <p class="price">₹150</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="desserts" class="menu-page hidden">
+        <button class="back-btn" onclick="goBack()">← Back</button>
+        <h2>Desserts</h2>
+
+        <div class="item">
+            <img src="images/jamun.png">
+            <div class="details">
+                <p class="name">Gulab Jamun</p>
+                <p class="price">₹50</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="others" class="menu-page hidden">
+        <button class="back-btn" onclick="goBack()">← Back</button>
+        <h2>Others</h2>
+
+        <div class="item">
+            <img src="images/salad.png">
+            <div class="details">
+                <p class="name">Salad</p>
+                <p class="price">₹40</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

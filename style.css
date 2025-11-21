@@ -1,0 +1,175 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    background: #fffaf3;
+}
+
+/* HOME PAGE */
+.home-page {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.title {
+    font-size: 55px;
+    color: #d35400;
+}
+
+.quote {
+    font-size: 30px;
+    margin: 10px 0 30px 0;
+    color: #dc730a;
+}
+
+/* VERTICAL BUTTONS */
+.menu-buttons-vertical {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: auto;
+    gap: 15px;
+}
+
+.btn {
+    padding: 15px;
+    font-size: 20px;
+    background: #e67e22;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.btn:hover {
+    background: #d35400;
+}
+
+/* MENU PAGE */
+.hidden {
+    display: none;
+}
+
+.menu-page {
+    padding: 20px;
+    text-align: center;
+}
+
+.back-btn {
+    padding: 10px 20px;
+    background: #444;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* MENU ITEM SIDE-BY-SIDE */
+.item {
+    display: flex;
+    align-items: center;
+    width: 90%;
+    max-width: 450px;
+    background: #ffffff;
+    padding: 12px;
+    margin: 15px auto;
+    border-radius: 12px;
+    box-shadow: 0 0 12px rgba(0,0,0,0.1);
+}
+
+.item img {
+    width: 90px;
+    height: 90px;
+    border-radius: 10px;
+    margin-right: 15px;
+    object-fit: cover;
+}
+
+.details {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.name {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.price {
+    font-size: 20px;
+    color: green;
+    font-weight: bold;
+}
+/* FRONT PAGE BACKGROUND */
+.home-page {
+    min-height: 100vh;
+    padding: 60px 20px;
+    text-align: center;
+    background: url("images/homebg.png") no-repeat center center/cover;
+}
+
+/* MENU PAGE BACKGROUND */
+.menu-page {
+    min-height: 100vh;
+    padding: 20px;
+    background: url("images/menun.png") no-repeat center center/cover;
+    color: white;
+    text-shadow: 1px 1px 3px black;
+}
+
+/* MENU ITEMS BACKGROUND WHITE CARD */
+.item {
+    background: rgba(255, 255, 255, 0.9);
+    color: black;
+    text-shadow: none;
+}
+/* 100% Responsive for All Mobiles */
+@media (max-width: 480px) {
+
+    /* Title & Quote smaller */
+    .title {
+        font-size: 32px;
+    }
+
+    .quote {
+        font-size: 16px;
+    }
+
+    /* Vertical buttons width */
+    .menu-buttons-vertical {
+        width: 85%;
+    }
+
+    .btn {
+        font-size: 18px;
+        padding: 12px;
+    }
+
+    /* Menu item card */
+    .item {
+        width: 95%;
+        padding: 10px;
+        flex-direction: row;
+    }
+
+    .item img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .details .name,
+    .details .price {
+        font-size: 18px;
+    }
+}
+
+/* For tablets */
+@media (min-width: 481px) and (max-width: 900px) {
+    
+    .menu-buttons-vertical {
+        width: 60%;
+    }
+
+    .item {
+        max-width: 500px;
+    }
+}
